@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common'
-import Stripe from 'node_modules/stripe/esm/stripe.esm.node'
 import { envs } from 'src/config'
 import { PaymentSessionDto } from './dto/payment-session.dto'
 import { Request, response, Response } from 'express'
+import Stripe from 'stripe';
 
 @Injectable()
 export class PaymentsService {
